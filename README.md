@@ -22,11 +22,6 @@ Aplikasi desktop berbasis Python untuk mendeteksi objek konstruksi pada gambar d
 
 1. Clone repository lalu masuk ke folder proyek.
 
-   ```bash
-   git clone <URL_REPOSITORY_ANDA>
-   cd construction-yolo11
-   ```
-
 2. Buat dan aktifkan virtual environment (disarankan).
 
    **Windows PowerShell**
