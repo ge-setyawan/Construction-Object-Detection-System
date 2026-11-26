@@ -90,10 +90,6 @@ Jika PowerShell menolak aktivasi script, jalankan ini sekali pada jendela PowerS
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```
 
-### Tentang `__pycache__`
-
-Folder `__pycache__/` aman dihapus dan GUI tetap bisa berjalan. Isinya hanya cache bytecode Python untuk mempercepat pemuatan; Python akan membuat folder tersebut kembali otomatis saat aplikasi dijalankan.
-
 ## Cara Menggunakan GUI
 
 ### 1. Memuat media
@@ -135,18 +131,6 @@ Klik **Export Excel**, pilih lokasi penyimpanan, lalu simpan sebagai `.xlsx`.
 - Untuk video, file berisi hasil per frame yang diproses untuk inferensi. Aplikasi menjalankan deteksi setiap tiga frame agar pemutaran tetap responsif.
 
 Kolom ekspor meliputi nama file/frame, enhancement, total objek, rata-rata confidence, jumlah setiap kelas, serta statistik region.
-
-## Struktur Proyek
-
-```text
-construction-yolo11/
-|-- main.py          # Aplikasi GUI dan alur deteksi
-|-- requirements.txt  # Daftar library yang perlu dipasang
-|-- models/
-|   `-- best.pt      # Model YOLOv11 terlatih
-|-- README.md
-`-- DOKUMENTASI_SISTEM.txt
-```
 
 ## Troubleshooting
 
